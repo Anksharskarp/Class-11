@@ -13,12 +13,14 @@ Search By Author: <input name='author'>
 </tr>
 
 {% for values in quoteList %}
+{% if author == values[2] %}
 <tr>
 <td> {{ values[0] }} </td>
 <td> {{ values[1] }} </td>
 <td> {{ values[2] }} </td>
 <td> {{ values[3] }} </td>
 </tr>
+{% endif %}
 {% endfor %}
 
 </table>
